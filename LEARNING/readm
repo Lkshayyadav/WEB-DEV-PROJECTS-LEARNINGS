@@ -1,0 +1,109 @@
+=>  TAGS IN (HTML) 
+
+// h = these tags are used to define headings in HTML
+// h1 = largest heading
+// h2 = second largest heading
+
+// p = paragraph tag, used to define a paragraph of text
+// br = line break tag, used to insert a line break in the text
+
+//b, i, u = these tags are used for bold,italic and underline text respectively 
+// strong = used to define important text, usually displayed in bold
+
+// sup = superscript tag, used to define text that should be displayed as superscript
+like i have a <p> line then lakshay is a <sup> coder </sup>  it will be displyed as coder will go up.
+ 
+//sub = subscript tag, used to define text that should be displayed as subscript    
+// like i have a <p> line then lakshay is a <sub> coder </sub>  it will be displyed as coder will go down.
+
+//ol and ul = these tags are used to create ordered and unordered lists respectively
+// ol = ordered list, items are numbered 1.
+// ul = unordered list, items are bulleted .
+
+//li = list item tag, used to define an item in a list
+ 
+//img = it is used for imvgage there are two section one for image url and another what should come if image doesnot appear 
+
+//a = a tag is used for hyper line many sites use a tag if we click on that we go another page or another url 
+
+// form = form tag are used with the help of attribute for summary it will be like a search box it in this wew can fill attributes like 
+<form>  <input type="" placeholder=""></form> like this if we fill name in placeholder 
+it will work like if in type we fill email only emil will be filled in the box.
+
+//div = div tag is used to create a division or section in the HTML document
+ div is a box but dont have a heigh by giving it a height and colour we can see it 
+ uses : jab bhi ek recanglt box bnana ho 
+ > jab bhi ek s jyda elements ko ek saath rkhne k liye.  
+ 
+ 
+
+
+ => starting up with (CSS)
+
+ before starting with css we need to link the css file with the html file
+ after that we make a boiler plate like we have in html .
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ html,body{
+    height: 100%;
+    width: 100%;
+ }
+
+ // properties related to text :
+ color: this property is used to change the color of the text
+ background-color: this property is used to change the background color of the element
+ font-size: this property is used to change the size of the text
+ font-family: this property is used to change the font of the text
+ font-weight: this property is used to change the weight of the text ( thickness of the text.)
+
+
+ // some comcepts related to div :
+  div : as told it is a container or a box so we can give it a height and width 
+  // for shifting it we can use margin and padding
+  margin : this property is used to create space outside the element
+  pading : this property is used to create space inside the element
+   like simply margin works in the whole page and padding woks in the box 
+
+// but if we want to make it into conter of the page we can use position-absolute;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+
+  it will make it in centre but rember it not work if we have not given the height and width of the div 
+  and the most important it it flw the box up.
+
+  // now we will learn some concpepts related to dix alignment 
+  : for example we have a manin  div and in it we have 3 more divs so after that the div me align by thmselve 
+  by using display: flex; it will make the divs align in a row
+
+  then we use align-items: center; it will make the divs align in the center of the main div 
+but it works in y axis so we use justify-content: center; it will will help us to aling it in 
+y axis  also we cn use some other properties like justify-content: flex-start; 
+  justify-content: flex-end; 
+  justify-content: space-between; 
+  justify-content: space-around; 
+  justify-content: space-evenly;
+
+
+line-height: this property is used to change the line height of the text
+// text-align: this property is used to change the alignment of the text
+// text-decoration: this property is used to add decoration to the text like underline, overline, line-through
+// text-transform: this property is used to change the case of the text like uppercase, lowercase, capitalize
+// letter-spacing: this property is used to change the spacing between the letters
+// word-spacing: this property is used to change the spacing between the words
+// font-style: this property is used to change the style of the text like normal, italic, oblique
+// font-variant: this property is used to change the variant of the text like small-caps, all-small-caps, petite-caps, all-petite-caps, unicase, titling-caps
+
+position: this property is used to change the position of the element like static, relative, absolute, fixed, sticky
+// static: this is the default value, the element is positioned according to the normal flow of the document
+// relative: the element is positioned relative to its normal position
+// absolute: the element is positioned relative to its nearest positioned ancestor
+// fixed: the element is positioned relative to the viewport, it will not move when the page is scrolled
+// sticky: the element is positioned based on the user's scroll position, it will stick to the top of the page when scrolled to a certain point
+
+
