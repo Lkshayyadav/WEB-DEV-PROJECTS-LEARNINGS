@@ -1,0 +1,116 @@
+
+
+
+
+
+
+// => // for selecting of any text, id , class the methods we use are 
+document.getElementById
+document.getElementsByClassName
+
+// => // but we prefer to use
+document.querySelector
+document.querySelectorAll
+
+-----------------------------------------------------------------------------------------------
+
+// => // for manuplating of any text we use
+let h1 = document.querySelector('h1');
+h1.textContent = "Hello World"; // changes the text content of the h1 element   
+h1.innerHTML = "<span>New Text</span>"; // changes the inner HTML of the h1 element
+h1.style.color = "red"; // changes the color of the h1 element    
+
+// => // for understaning it much better go to inspect of the page and then go to console and type the name of the variable
+// for example if you type h1 in the console it will show you the h1
+// you can also use console.log(h1) to see the h1 element in the console
+// check its properties and methods
+
+--------------------------------------------------------------------------------------------------
+
+// +> // now ATTTRIBUTE MANIPULATION : (attribute is a property of an element like in html we have src, href, class, id etc.)
+
+// there are 3 type getattribute, setattribute, removeattribute
+// => // setattribute is used to get the value of an attribute
+let img = document.querySelector('img');
+let src = img.setAttribute('src', 'https://example.com/image.jpg'); // sets the src attribute of the img element
+c// => what will happen is the src attribute of the img element will be set to the value 'https://example.com/image.jpg'
+also like this we can use getattribute and removeattribute
+
+// +> for using getattribute and removeattribute
+let img = document.querySelector('img');
+console.log((img.getAttribute('src'))); // gets the value of the src attribute of the img element
+img.removeAttribute('src'); // removes the src attribute from the img element
+
+-------------------------------------------------------------------------------------------------------
+
+// => DYNAMIC DOM MANIPULATION : (createlement, appendchild, insertbefore, removechild, prependchild);
+// difference between appendchild and prependchild is that appendchild adds the element at the end of the parent element and prependchild adds the element at the beginning of the parent element
+// => for example if we have a div and we want to add a paragraph to it we
+let h1 = document.querySelector('h1');
+h1.textContent = "Hello World"; // changes the text content of the h1 element
+document.querySelector('body').appendChild(h1); // appends the h1 element to the body element
+
+document.querySelector('body').prepend(h1); // prepends the h1 element to the body element
+
+-------------------------------------------------------------------------------------------------------
+
+// => for changing the style of an element we can use the style property
+let h1 = document.querySelector('h1');
+h1.style.color = "red"; // changes the color of the h1 element
+
+
+// => <<SIMPLE REMEBER ONE THING IF YOU WANT TO KNOW AND CHANGE ANY PRPERLY SIMPLE CONSOLE IT IN THE CONSOLE AND YOU WILL GET THE PROPERTIES AND METHODS OF THAT ELEMENT>>
+
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+
+EVENTS AND EVENT HANDLINGS :
+
+// browser m pager par  hoi bhi harkat karto event raise ho jayega.
+
+// => for using event listner or creagting an event some stepas are : 
+   // select the paragraph first 
+   // then apply event listner on it 
+    => h1.addEventListener("EVENT = "CLICK"EXAMPLE , function (){
+  h1.style.backgroundColor= "red";
+  })
+  // like this 
+
+// =>   TYPES OF EVNET listner WHICH I HAVE TO REMEBER : 
+i learned about click 
+==> input =  event which is used for input fields <==
+input = document.querySelector("input");
+input.addEventListener("input", function (events) {
+  if (events.data !== null) {
+    console.log(events.data);
+  }
+});
+=> this will log the data entered in the input field to the console
+=> for this firsst you have to create an input field in the html file like this
+<input type="text" placeholder="Enter text here" style="width: 500px;
+this will make an input box and in page YOUou enter any thing it will get print in the conocle
+===> main thing to rember first only use event wihout using the if and .data then you can check all the properties of the event in the console
+
+==> change =  <==
+// before this for example we have createde a select tag in the html which loooks like 
+<select>
+<option select disabled value="">Option </option>
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="3">Option 3</option>
+</select>
+also in first opiton we can diable and selcted it by using the attributes like this ( selected disabled)
+
+
+// in this we will try that after selecting the text select ypur device it will change to device selected 
+const input = document.querySelector("select");
+input.addEventListener("change", function (event) {
+  if (event.target.value !== "") {
+    input.previousElementSibling.textContent = `Device selected: ${event.target.value}`;
+  } else {
+    input.previousElementSibling.textContent = "Select your device";
+  }
+});
+
+
