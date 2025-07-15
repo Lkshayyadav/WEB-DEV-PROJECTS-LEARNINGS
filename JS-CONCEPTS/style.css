@@ -21,7 +21,8 @@ body {
 
 #upload:hover {
   background-color: #168f42; /* Darker on hover */
-}
+} 
+
 #file {
-  display: none; Hide the file input
+  display: none; 
 }

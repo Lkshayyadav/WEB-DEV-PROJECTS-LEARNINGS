@@ -40,3 +40,4 @@ file.addEventListener("change", function(dets) {
 //   upload.textContent = dets.target.files[0].name;
   upload.textContent = "you have choosen " + file.files[0].name;
 });
+
