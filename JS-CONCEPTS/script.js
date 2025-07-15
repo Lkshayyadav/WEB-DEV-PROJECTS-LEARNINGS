@@ -18,12 +18,25 @@
 //  })
 
 
-const input = document.querySelector("select");
-input.addEventListener("change", function (event) {
-  if (event.target.value !== "") {
-    h1.textContent = `Device selected: ${event.target.value}`;
-  } else {
-    h1.textContent = "Select your device";
-  }
-  console.log(event.target.value);
+// const input = document.querySelector("select");
+// input.addEventListener("change", function (event) {
+//   if (event.target.value !== "") {
+//     h1.textContent = `Device selected: ${event.target.value}`;
+//   } else {
+//     h1.textContent = "Select your device";
+//   }
+//   console.log(event.target.value);
+// });
+
+const file =document.querySelector("#file");
+const upload = document.querySelector("#upload");
+
+upload.addEventListener("click", function() {
+  file.click();
+
+  
+});
+file.addEventListener("change", function(dets) {
+//   upload.textContent = dets.target.files[0].name;
+  upload.textContent = "you have choosen " + file.files[0].name;
 });
