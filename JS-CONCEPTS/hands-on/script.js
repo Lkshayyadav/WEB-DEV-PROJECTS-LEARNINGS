@@ -28,16 +28,22 @@
 //   console.log(event.target.value);
 // });
 
-const file =document.querySelector("#file");
-const upload = document.querySelector("#upload");
 
-upload.addEventListener("click", function() {
-  file.click();
 
-  
+
+// =>
+
+let adcd = document.querySelector("#abcd");
+
+
+adcd.addEventListener("mouseover", function () {
+  abcd.style.backgroundColor = "yellow"
+
 });
-file.addEventListener("change", function(dets) {
-//   upload.textContent = dets.target.files[0].name;
-  upload.textContent = "you have choosen " + file.files[0].name;
-});
 
+abcd.addEventListener("mouseout",function(){
+abcd.style.backgroundColor="red"
+
+
+
+});

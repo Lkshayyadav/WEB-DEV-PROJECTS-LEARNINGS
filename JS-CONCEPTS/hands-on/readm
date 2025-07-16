@@ -104,6 +104,7 @@ also in first opiton we can diable and selcted it by using the attributes like t
 
 
 // in this we will try that after selecting the text select ypur device it will change to device selected 
+
 const input = document.querySelector("select");
 input.addEventListener("change", function (event) {
   if (event.target.value !== "") {
@@ -112,5 +113,18 @@ input.addEventListener("change", function (event) {
     input.previousElementSibling.textContent = "Select your device";
   }
 });
+
+==> submit <==
+
+==> mouse over <==
+
+// in this when hover our mouse on the text or object or div it changes according to us for exomle what i use is i create a div box and use mouse over 
+// when i hover mouse in colour or background colour hcnages or also i used <<< mouse out >>> event to change the colour back to normal
+
+// like this we use mousemove 
+
+=> so that when i use move or move it the div also moves whith it 
+the approch i used is << before thsi first use posiont abopsulut on div so that it can movbe >>
+
 
 
